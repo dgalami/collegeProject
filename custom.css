@@ -1,0 +1,112 @@
+
+/*loginform*/
+
+.Form-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.loginForm-content {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+
+input {
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid green;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.sm-txt {
+    font-size: 13px;
+}
+
+.sub-btn {
+    width: 60%;
+    height: 40px;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    border: 1px solid #0084D4;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.sub-btn:hover {
+    background-color: white;
+    color: #0084D4;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/*Register/sign up form*/
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.registerForm-content {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+
+.reg-input {
+    width: 70%;
+    height: 35px;
+    font-size: 16px;
+    border: 1px solid green;
+}
+
+.reg-sub-btn {
+    width: 72%;
+    height: 45px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.links {
+    color:#0080ff;
+}

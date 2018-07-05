@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page Layout</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+
+   <script type="text/javascript">
+
+    window.onload = function(){
+        var log_in = document.getElementById("login");
+        var login_modal = document.getElementById("modal");
+        var close_btn = document.getElementById("close-btn");
+
+        var register_in = document.getElementById("register");
+        var register_modal = document.getElementById("register-modal");
+        var close_btn1 = document.getElementById("close-btn1");
+
+        log_in.addEventListener("click", function(){
+        login_modal.style.display = "flex";
+        });
+
+        close_btn.addEventListener("click", function(){
+        login_modal.style.display = "none";
+        });
+
+
+        register_in.addEventListener("click", function(){
+        register_modal.style.display = "flex";
+        });
+
+        close_btn1.addEventListener("click", function(){
+        register_modal.style.display = "none";
+        });
+
+};
+
+
+    </script>
+
+
+</head>
+<body>
+
+<!--Navbar-->
+   <div class="menu-wrapper">
+      <ul id="nav-bar">
+          <li style="float: left;"><a href="#" id="logo">MMS</a></li>
+          <li><a href="#" id="login" class="menu">Log in</a></li>
+          <li><a href="#" id="register" class="menu">Register</a></li>
+      </ul>
+   </div>
+
+<!--End of navbar-->
+
+<!--   page content-->
+   <div class="content">
+       <div class="image-slide">
+           <img class="img-slides" src="images/slide1.jpg">
+           <div class="img-content">
+               <p style="font-size: 40px; margin-bottom: 0px;">Make My Stay</p>
+               <p style="margin: 9px;">Book rooms Anywhere and Anytime</p>
+               <button class="sub-btn ">REGISTER</button>
+           </div>
+
+       </div>
+   </div>
+
+<!--End of page content-->
+
+
+
+<!--   login form modal-->
+   <div class="Form-wrapper" id="modal">
+       <div class="loginForm-content">
+         <div class="close" id="close-btn">+</div>
+          <h3>Make My Stay</h3>
+           <form action="">
+               <input type="text" placeholder="username" name="uname" required>
+               <input type="password" placeholder="password" name="password" required>
+               <button type="submit" class="sub-btn">LOG IN</button>
+           </form>
+           <div class="sm-txt">
+               <p>Forget your Password? You can <a href="#" class="links">reset it.</a></p>
+               <p>Not a Member Yet? Registering is free and only takes a second.</p>
+               <button class="sub-btn">REGISTER</button>
+           </div>
+       </div>
+   </div>
+
+<!--
+   sign up form
+   userName, password, lastName, FirstName, Email
+-->
+  <div class="modal-wrapper" id="register-modal">
+      <div class="registerForm-content">
+        <div class="close" id="close-btn1">+</div>
+         <h3>Register</h3>
+         <p>Please fill in this form to create an account.</p>
+          <form>
+             <input type="text" placeholder="User Name" class = "reg-input" required>
+              <input type="text" placeholder="First Name" class = "reg-input"  required>
+              <input type="text" placeholder="Last Name" class = "reg-input"  required>
+              <input type="email" placeholder="Email Address" class = "reg-input"  required>
+              <input type="password" placeholder="Create Password"  class = "reg-input" required>
+              <p style="padding-left: 20px;">By creating an account you agree to our <a href="#" class="links">Terms &amp; Privacy</a>.</p>
+              <input type="submit" name="Submit" class="reg-sub-btn">
+
+              <hr style="margin: 0 20px;">
+
+              <p style="margin-top: 9px;">Already have an account? <a href="#" class="links">Sign in</a></p>
+          </form>
+      </div>
+  </div>
+
+</body>
+</html>
