@@ -19,6 +19,10 @@
         var register_modal = document.getElementById("register-modal");
         var close_btn1 = document.getElementById("close-btn1");
 
+         var register_in1 = document.getElementById("register1");
+        var register_modal1 = document.getElementById("register-modal");
+        var close_btn2 = document.getElementById("close-btn1");
+
         log_in.addEventListener("click", function(){
         login_modal.style.display = "flex";
         });
@@ -35,6 +39,15 @@
         close_btn1.addEventListener("click", function(){
         register_modal.style.display = "none";
         });
+
+         register_in1.addEventListener("click", function(){
+        register_modal.style.display = "flex";
+        });
+
+        close_btn2.addEventListener("click", function(){
+        register_modal.style.display = "none";
+        });
+
 
 };
 
@@ -63,7 +76,7 @@
            <div class="img-content">
                <p style="font-size: 40px; margin-bottom: 0px;">Make My Stay</p>
                <p style="margin: 9px;">Book rooms Anywhere and Anytime</p>
-               <button class="sub-btn ">REGISTER</button>
+               <button class="sub-btn " id="register1">REGISTER</button>
            </div>
 
        </div>
@@ -92,7 +105,7 @@
    </div>
 
 <!--
-   sign up form
+   Registration form
    userName, password, lastName, FirstName, Email
 -->
   <div class="modal-wrapper" id="register-modal">
